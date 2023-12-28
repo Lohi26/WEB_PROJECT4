@@ -1,0 +1,178 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.link1 {
+    background-color: bisque;
+    width: 5%;
+    padding: 15px;
+}
+
+.line1 {
+    border-left: 2px solid white;
+    height: 50px;
+    margin-left: 60px;
+}
+
+.house1 {
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+@keyframes shake {
+    20% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.house1 {
+    animation: shake 10s 0s;
+    animation-duration: 5s;
+}
+
+@keyframes move-bottom {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.house {
+    animation: move-bottom 2s;
+}
+
+.house1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.house1:hover {
+    background-color: #F5DEB3;
+}
+
+.house1 h3:hover {
+    color: black;
+    font-weight: bold;
+}
+
+#line2 {
+    height: 50px;
+}
+
+.house2 {
+    margin-left: 15px;
+}
+
+.house3 {
+    margin-left: 10px;
+}
+
+.house4 {
+    margin-left: 7px;
+}
+
+.home {
+    width: -150px;
+}
+
+.lines1 {
+    position: fixed;
+    right: 50px;
+    height: 60px;
+    width: 2px;
+    bottom: 0;
+    background-color: white;
+}
+
+.home1 {
+    right: 10px;
+    bottom: 60px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+}
+
+.home1:hover {
+    background-color: #F5DEB3;
+}
+
+.home1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.home1 a:hover {
+    color: black;
+}
+
+@keyframes rotating {
+    20% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.home1 {
+    animation: rotating 10s 0s;
+    animation-duration: 10s;
+}
+
+.home {
+    animation: move-bottom 2s;
+}
+
+@keyframes moveBox {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: 100%;
+    }
+}
+
+.lp {
+    animation: moveBox 3s ease-in-out 10s;
+}
